@@ -1,0 +1,27 @@
+body {
+    box-sizing: border-box;
+}
+
+.game_frame {
+    width: 21em;
+    height: 21em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.board_square {
+    background-color: beige;
+    border: 0.01em solid darkgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.board_square:hover {
+    background-color: lightgreen;
+    transition: 0.1s ease-in-out all;
+}
+
